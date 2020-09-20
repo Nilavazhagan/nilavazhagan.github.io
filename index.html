@@ -1,0 +1,205 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" data-color="black">
+<head>
+	<meta charset="utf-8" />
+	<title>Nilavazhagan - Portfolio</title>
+	<!--<link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">-->
+	<link href="https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/3d6322661e.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="styles/style.css"></link>
+	<script src="scripts/main.js"></script>
+
+</head>
+<body>
+<div class="main-container">
+	<div class="card top-card">
+		<div class="line"></div>
+		<div class="photo"></div>
+		<div class="name">Nilavazhagan Elangovan</div>
+		<div class="contact-info">
+			<div class="mail">
+				<i class="fas fa-envelope" aria-hidden="true"></i>
+				<a href="mailto:nilavazhagan1696@gmail.com" class="anchor-tag mail-id">nilavazhagan1696@gmail.com</a>
+			</div>
+			<div class="phone" style="">
+				<i class="fas fa-mobile" aria-hidden="true" style=""></i>
+				<span class="phone-number">(+91) 99629 97805</a>
+			</div>
+		</div>
+	</div>
+	<div class="card card2 about-card">
+		<div class="title">About</div>
+		<div class="content">I'm a developer who has always been passionate about game development, now looking to break into the industry.</div>
+	</div>
+	<div class="card card3">
+		<div class="title">Skills</div>
+		<div class="content">
+			<ul class="skill-content" id="skill-content"></ul>
+		</div>
+	</div>
+	<div class="card card4">
+		<div class="title">Interests</div>
+		<div class="content interests-content">
+			<div class="interest">
+				<span class="interest-icon">
+					<i class="fas fa-code interest-fa-icon" aria-hidden="true"></i>
+				</span>
+				<span class="interest-title">Progamming</span>
+			</div>
+			<div class="interest">
+				<span class="interest-icon">
+					<i class="fas fa-gamepad interest-fa-icon" aria-hidden="true"></i>
+				</span>
+				<span class="interest-title">Game Development</span>
+			</div>
+			<div class="interest">
+				<span class="interest-icon">
+					<i class="fas fa-cube interest-fa-icon" aria-hidden="true"></i>
+				</span>
+				<span class="interest-title">3D Modeling</span>
+			</div>
+		</div>
+	</div>
+	<div class="card card5">
+		<div class="tabs">
+			<label class="tab-label">
+				<input type="radio" class="tab" name="tab-radio" checked data-tab="projects"/>
+				<span class="tab-span" tooltip="Projects" tooltip-direction="right">
+					<i class="fas fa-pencil-ruler tab-icon"></i>
+				</span>
+			</label>
+			<label class="tab-label">
+				<input type="radio" class="tab" name="tab-radio" data-tab="renders"/>
+				<span class="tab-span" tooltip="Renders" tooltip-direction="right">
+					<i class="fas fa-cube tab-icon"></i>
+				</span>	
+			</label>
+			<label class="tab-label">
+				<input type="radio" class="tab" name="tab-radio" data-tab="education"/>
+				<span class="tab-span" tooltip="Experience & Education" tooltip-direction="right">
+					<i class="fas fa-book-open tab-icon"></i>
+				</span>
+			</label>
+			<label class="tab-label hide">
+				<input type="radio" class="tab" name="tab-radio" data-tab="contact" id="contact-radio"/>
+				<span class="tab-span" tooltip="Contact" tooltip-direction="right">
+					<i class="fas fa-book-open tab-icon"></i>
+				</span>
+			</label>
+		</div>
+		<div class="tab-content" data-tab-content="projects">
+			<div class="title">
+				Projects
+				<div class="project-tabs" id="project-tabs"></div>
+			</div>
+			<div class="content project-content" id="project-content"></div>
+		</div>
+		<div class="tab-content hide" data-tab-content="renders">
+			<div class="title">Renders</div>
+			<div class="content render-content">
+				<div class="render" style="background-image: url(images/3d/01.png);"></div>
+				<div class="render" style="background-image: url(images/3d/02.png);"></div>
+				<div class="render" style="background-image: url(images/3d/03.png);"></div>
+				<div class="render" style="background-image: url(images/3d/04.png);"></div>
+				<div class="render" style="background-image: url(images/3d/05.png);"></div>
+			</div>
+		</div>
+		<div class="tab-content hide" data-tab-content="education">
+			<div class="title">Experience & Education</div>
+			<div class="content education-content">
+				<div class="edu-text icon-right" style="grid-column: 1 / 6;grid-row: 1 / 2;">
+					<div class="edu-icon">
+						<i class="fas fa-laptop edu-icn"></i>
+					</div>
+					<div class="edu-content">
+						<div class="edu-sub-title">Jun 2017 - present</div>
+						<div class="edu-title">Member Technical Staff</div>
+						<div class="edu-desc">Zoho Corporation</div>
+					</div>
+				</div>
+				<div class="edu-text" style="grid-column: 1 / 6;grid-row: 3 / 4;">
+					<div class="edu-icon">
+						<i class="fas fa-graduation-cap edu-icn"></i>
+					</div>
+					<div class="edu-content">
+						<div class="edu-sub-title">2017 - 8.43 GPA</div>
+						<div class="edu-title">Bachelor of Engineering</div>
+						<div class="edu-desc">Computer Science and Engineering</div>
+					</div>
+				</div>
+				<div class="edu-text icon-right" style="grid-column: 1 / 6;grid-row: 5 / 7;">
+					<div class="edu-icon">
+						<i class="fas fa-school edu-icn"></i>
+					</div>
+					<div class="edu-content">
+						<div class="edu-sub-title">92% - 2013</div>
+						<div class="edu-title">Higher Secondary</div>
+						<div class="edu-desc">Central Board of Secondary Education</div>
+					</div>
+					<div class="edu-content">
+						<div class="edu-sub-title">85% - 2011</div>
+						<div class="edu-title">Secondary Education</div>
+						<div class="edu-desc">Indian Certificate of Secondary Education</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="tab-content hide" data-tab-content="contact">
+			<div class="title">Contact</div>
+			<div class="content contact-content">
+				<div class="contact-form">
+					<input type="text" class="input-element" placeholder="Name">
+					<input type="text" class="input-element" placeholder="Email">
+					<textarea class="input-element" placeholder="What would you like to talk about?"></textarea>
+					<div class="contact-form-footer">
+						<button name="Submit" class="contact-buttons send-button">Send</button>
+						<button name="Cancel" class="contact-buttons cancel-button">Cancel</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="social-icons">
+		<a href="https://hlysias.artstation.com/" target="nila-artstation" class="anchor-tag social-icon artstation" tooltip="Artstation" tooltip-direction="left">
+			<i class="fab fa-artstation social-fa-icon"></i>
+		</a>
+		<a href="https://www.reddit.com/user/hlysias/" target="nila-reddit" class="anchor-tag social-icon reddit" tooltip="Reddit" tooltip-direction="left">
+			<i class="fab fa-reddit-alien social-fa-icon"></i>
+		</a>
+		<a href="https://in.linkedin.com/in/nilavazhagan-elangovan-9a46a7118" target="nila-linked-in" class="anchor-tag social-icon linked-in" tooltip="LinkedIn" tooltip-direction="left">
+			<i class="fab fa-linkedin-in social-fa-icon"></i>
+		</a>
+		<a href="https://antreek-games.itch.io/" target="nila-itch-io" class="anchor-tag social-icon itch-io" tooltip="itch.io" tooltip-direction="left">
+			<i class="fab fa-itch-io social-fa-icon"></i>
+		</a>
+	</div>
+	<div class="theme-selection">
+		<label class="theme-label">
+			<input type="radio" name="theme-selection" class="theme-input" value="white">
+			<span class="theme-selector"></span>
+		</label>
+		<label class="theme-label">
+			<input type="radio" name="theme-selection" class="theme-input" value="black" checked>
+			<span class="theme-selector"></span>
+		</label>
+		<label class="theme-label">
+			<input type="radio" name="theme-selection" class="theme-input" value="red">
+			<span class="theme-selector"></span>
+		</label>
+		<label class="theme-label">
+			<input type="radio" name="theme-selection" class="theme-input" value="green">
+			<span class="theme-selector"></span>
+		</label>
+		<label class="theme-label">
+			<input type="radio" name="theme-selection" class="theme-input" value="blue">
+			<span class="theme-selector"></span>
+		</label>
+	</div>
+	<div class="other-links">
+		<a href="docs/Resume.pdf" target="nila-resume" class="resume-link anchor-tag">Resume</a>
+		<label class="contact-link anchor-tag hide" for="contact-radio">Get in Touch</label>
+	</div>
+</div>
+</body>
+</html>
