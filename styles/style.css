@@ -140,7 +140,7 @@ html, body {
     background: white;
     display: block;
     transform: scale(.94);
-    background: url(../images/photo.jpg);
+    background: url(../images/photo.JPG);
     background-size: contain;
     background-repeat: no-repeat;
 }
