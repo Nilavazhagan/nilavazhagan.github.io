@@ -1,4 +1,4 @@
-﻿:root {
+:root {
 --theme-color-white: #bababa;
 --theme-color-black: #212121;
 --theme-color-red: #bf5f5f;
@@ -9,6 +9,7 @@
     --bg-color-flat: var(--theme-color-green);
     --bg-color: linear-gradient(225deg, #5f9b61, #508352);
     --font-color: #00440f;
+    --font-color-transparent: #00440f8a;
     --shadow-color1: #3b603c;
     --shadow-color2: #77c27a;
     --line-color: #064e0687;
@@ -19,6 +20,7 @@
     --bg-color-flat: var(--theme-color-red);
     --bg-color: linear-gradient(225deg, #cc6666, #ac5656);
     --font-color: #581515;
+    --font-color-transparent: #5815158a;
     --shadow-color1: #7e3f3f;
     --shadow-color2: #ff7f7f;
     --line-color: #984444;
@@ -29,6 +31,7 @@
     --bg-color-flat: var(--theme-color-blue);
     --bg-color: linear-gradient(225deg, #6685cc, #5670ac);
     --font-color: #1e2c4c;
+    --font-color-transparent: #1e2c4c8a;
     --shadow-color1: #3f527e;
     --shadow-color2: #7fa6ff;
     --line-color: #1e2c4c73;
@@ -39,6 +42,7 @@
     --bg-color-flat: var(--theme-color-white);
     --bg-color: linear-gradient(225deg, #c7c7c7, #a7a7a7);
     --font-color: #26284a;
+    --font-color-transparent: #26284a8a;
     --shadow-color1: #7b7b7b;
     --shadow-color2: #f9f9f9;
     --line-color: #26284a8a;
@@ -49,6 +53,7 @@
     --bg-color-flat: var(--theme-color-black);
     --bg-color: linear-gradient(225deg, #232323, #1e1e1e);
     --font-color: #b7b7b7;
+    --font-color-transparent: #b7b7b78a;
     --shadow-color1: #161616;
     --shadow-color2: #2c2c2c;
     --line-color: #b7b7b78a;
@@ -750,6 +755,7 @@ span.project-tab-span, span.screenshot-tab-span {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 .content.education-content {
@@ -893,4 +899,22 @@ textarea.input-element {
     padding: 5px 10px;
     margin-right: 10px;
     cursor: pointer;
+}
+
+.render-description {
+  height: 100%;
+  width: calc(100% - 60px);
+  border-radius: 10px;
+  background: var(--font-color-transparent);
+  color: var(--bg-color-flat);
+  display: flex;
+  align-items: center;
+  padding: 0px 30px;
+  text-align: center;
+  transition: transform 0.5s ease-out;
+  transform: translateY(100%);
+  justify-content: center;
+}
+.render:hover .render-description {
+  transform: translateY(0);
 }
