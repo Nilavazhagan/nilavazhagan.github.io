@@ -131,10 +131,11 @@ html, body {
     display: inline-block;
     width: var(--photo-size);
     height: var(--photo-size);
-    box-shadow: var(--box-shadow);
+    /*box-shadow: var(--box-shadow);*/
     border-radius: 50%;
     --photo-size: 140px;
-    background: var(--bg-color);
+    /*background: var(--bg-color);*/
+    background: var(--font-color);
     position: relative;
 }
 .photo:after {
