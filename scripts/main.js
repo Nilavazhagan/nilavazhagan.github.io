@@ -196,6 +196,26 @@ const data = {
 	],
 	"projects" : [
 		{
+			"title" : "Mobile VR Simulation with Navigation",
+			"description" : "",
+			"properties" : [
+				{
+					"label" : "Genre",
+					"value" : "Productivity"
+				},
+				{
+					"label" : "Platform",
+					"value" : "Android"
+				},
+				{
+					"label" : "Made With",
+					"value" : "Unity 3D, Google Cardboard"
+				}
+			],
+			"orientation" : "landscape",
+			"image_number" : 0
+		},
+		{
 			"title" : "Hatch3",
 			"description" : "A Tamagotchi style Match 3 game.",
 			"properties" : [

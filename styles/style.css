@@ -930,6 +930,9 @@ textarea.input-element {
   margin-top: 90%;
   margin-left: calc(50% - 18px);
 }
+.landscape .scrnshot-placeholder-icon {
+    margin-top: calc(10% + 20px);
+}
 .scrnshot-placeholder-text {
   text-align: center;
   font-size: 20px;
