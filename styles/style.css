@@ -86,7 +86,7 @@ html, body {
 }
 .card {
   border-radius: 20px;
-  background: var(--bg-color);
+  /*background: var(--bg-color);*/
   box-shadow: var(--box-shadow);
   padding: 15px;
   animation-name: scalein;
@@ -801,6 +801,7 @@ span.project-tab-span, span.screenshot-tab-span {
     display: block;
     margin-top: 22px;
     transform: rotate(180deg);
+    margin-left: 16px;
 }
 
 .edu-title {
@@ -918,4 +919,31 @@ textarea.input-element {
 }
 .render:hover .render-description {
   transform: translateY(0);
+}
+
+.scrnshot-placeholder {
+  height: 100%;
+}
+.scrnshot-placeholder-icon {
+  width: max-content;
+  font-size: 34px;
+  margin-top: 90%;
+  margin-left: calc(50% - 18px);
+}
+.scrnshot-placeholder-text {
+  text-align: center;
+  font-size: 20px;
+  margin: 20px 10px;
+  font-variant: small-caps;
+}
+
+.project.wip.portrait .project-title::before {
+    content: "WIP";
+    font-size: 14px;
+    margin-bottom: 9px;
+    margin-right: 10px;
+    background: var(--font-color);
+    padding: 0px 6px;
+    color: var(--bg-color-flat);
+    border-radius: 5px;
 }

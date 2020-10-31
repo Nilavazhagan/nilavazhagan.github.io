@@ -61,27 +61,42 @@ function processProjects(){
 	projects.forEach((project,index) => {
 		let project_div = document.createElement("div");
 		project_div.className = "project " + project.orientation + (index !== 0 ? " hide" : "") /*+ (project.pc_game ? " pc" : "")*/;
+
+		if(project.wip){
+			project_div.classList.add("wip");
+		}
+
 		let project_scrnshots = document.createElement("div");
 		project_scrnshots.className = "project-screenshots";
 
-		let screenshot_tabs = document.createElement("div");
-		screenshot_tabs.className = "screenshot-tabs";
+		if(project.image_number > 0){
+			let screenshot_tabs = document.createElement("div");
+			screenshot_tabs.className = "screenshot-tabs";
+			for(let i = 1; i <= project.image_number; i++){
+				let image = document.createElement("img");
+				image.src = `images/games/${project.folder}/00${i}${project.extension}`;
+				image.className = `screenshot${ i !== 1 ? ' hide' : '' }`;
+				project_scrnshots.appendChild(image);
 
-		for(let i = 1; i <= project.image_number; i++){
-			let image = document.createElement("img");
-			image.src = `images/games/${project.folder}/00${i}${project.extension}`;
-			image.className = `screenshot${ i !== 1 ? ' hide' : '' }`;
-			project_scrnshots.appendChild(image);
-
-			let screenshot_tab = createRadio(i-1, "screenshot-tab", "screenshot-tab-" + index);
-			screenshot_tab.addEventListener("change", () => {
-				project_scrnshots.querySelector(".screenshot:not(.hide)").classList.add("hide");
-				image.classList.remove("hide");
-			});
-			screenshot_tabs.appendChild(screenshot_tab);
+				let screenshot_tab = createRadio(i-1, "screenshot-tab", "screenshot-tab-" + index);
+				screenshot_tab.addEventListener("change", () => {
+					project_scrnshots.querySelector(".screenshot:not(.hide)").classList.add("hide");
+					image.classList.remove("hide");
+				});
+				screenshot_tabs.appendChild(screenshot_tab);
+			}
+			project_scrnshots.appendChild(screenshot_tabs);
+		}else{
+			project_scrnshots.classList.add("no-screenshots");
+			project_scrnshots.innerHTML =  `<div class="scrnshot-placeholder">
+												<i aria-hidden="true" class="fas fa-ban scrnshot-placeholder-icon"></i>
+												<div class="scrnshot-placeholder-text"> No Screenshots Yet</div>
+											</div>`;
+			/*
+			
+			*/
 		}
 
-		project_scrnshots.appendChild(screenshot_tabs);
 		let project_title = document.createElement("div");
 		project_title.className = "project-title";
 		project_title.textContent = project.title;
@@ -180,6 +195,27 @@ const data = {
 		}
 	],
 	"projects" : [
+		{
+			"title" : "Hatch3",
+			"description" : "A Tamagotchi style Match 3 game.",
+			"properties" : [
+				{
+					"label" : "Genre",
+					"value" : "Puzzle"
+				},
+				{
+					"label" : "Platform",
+					"value" : "Android, iOS"
+				},
+				{
+					"label" : "Made With",
+					"value" : "Unity 3D"
+				}
+			],
+			"orientation" : "portrait",
+			"image_number" : 0,
+			"wip" : true
+		},
 		{
 			"title" : "Pop It - Colors",
 			"description" : "Pop the Dots that appear on the screen to score points. Don't miss a dot. Includes 7 game modes and in-game help.",
