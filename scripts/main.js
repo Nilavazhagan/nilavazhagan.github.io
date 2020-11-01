@@ -166,10 +166,6 @@ const data = {
 			"rating" : 2.5
 		},
 		{
-			"name" : "Blender",
-			"rating" : 2
-		},
-		{
 			"name" : "Unity",
 			"rating" : 2
 		},
@@ -182,6 +178,10 @@ const data = {
 			"rating" : 3.5
 		},
 		{
+			"name" : "HTML/CSS",
+			"rating" : 3
+		},
+		{
 			"name" : "Mercurial VCS",
 			"rating" : 4
 		},
@@ -190,8 +190,8 @@ const data = {
 			"rating" : 4
 		},
 		{
-			"name" : "HTML/CSS",
-			"rating" : 3
+			"name" : "Blender",
+			"rating" : 2
 		}
 	],
 	"projects" : [
