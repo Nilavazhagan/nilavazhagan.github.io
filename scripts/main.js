@@ -197,11 +197,11 @@ const data = {
 	"projects" : [
 		{
 			"title" : "Mobile VR Simulation with Navigation",
-			"description" : "",
+			"description" : "Application that simulates an environment and enables users to explore & navigate to various points of interests.",
 			"properties" : [
 				{
 					"label" : "Genre",
-					"value" : "Productivity"
+					"value" : "Simulation"
 				},
 				{
 					"label" : "Platform",
@@ -213,7 +213,9 @@ const data = {
 				}
 			],
 			"orientation" : "landscape",
-			"image_number" : 0
+			"image_number" : 6,
+			"folder" : "airport-vr",
+			"extension" : ".png"
 		},
 		{
 			"title" : "Hatch3",
@@ -235,6 +237,29 @@ const data = {
 			"orientation" : "portrait",
 			"image_number" : 0,
 			"wip" : true
+		},
+		{
+			"title" : "The Infinite Spirit Of Carte Blanche",
+			"description" : "The advent of Aliens of innominate origin causes pandemonium on Earth. The Human Race is wiped out by the aliens with the help of their Advanced Robots. Hubert Lysias is the Chosen One to save the Earth. Who is Hubert Lysias? Find Out in the game and help Hubert Lysias to defeat the aliens and save the Earth.",
+			"properties" : [
+				{
+					"label" : "Genre",
+					"value" : "FPS"
+				},
+				{
+					"label" : "Platform",
+					"value" : "Windows, macOS, Linux"
+				},
+				{
+					"label" : "Made With",
+					"value" : "Unity 3D, Audacity"
+				}
+			],
+			"orientation" : "landscape",
+			"folder" : "iscb",
+			"image_number" : 5,
+			"extension" : ".png",
+			"pc_game" : true
 		},
 		{
 			"title" : "Pop It - Colors",
@@ -281,28 +306,6 @@ const data = {
 			"extension" : ".jpg"
 		},
 		{
-			"title" : "Dead End",
-			"description" : "You are caught in a weird dream, a hallucination (Or is it just real??). A dream where you need to solve a maze to escape. You later find out it's not just one maze. Walk between the Walls of Red and on top of the Floor of Black to acquire the Sphere of Green Light in each maze in order to advance.",
-			"properties" : [
-				{
-					"label" : "Genre",
-					"value" : "Puzzle"
-				},
-				{
-					"label" : "Platform",
-					"value" : "Android"
-				},
-				{
-					"label" : "Made With",
-					"value" : "Unity 3D"
-				}
-			],
-			"orientation" : "landscape",
-			"folder" : "dead-end",
-			"image_number" : 4,
-			"extension" : ".png"
-		},
-		{
 			"title" : "Pop it",
 			"description" : "Pop the Dots that appear on the screen to score points. Don't miss a dot.",
 			"properties" : [
@@ -325,27 +328,26 @@ const data = {
 			"extension" : ".png"
 		},
 		{
-			"title" : "The Infinite Spirit Of Carte Blanche",
-			"description" : "The advent of Aliens of innominate origin causes pandemonium on Earth. The Human Race is wiped out by the aliens with the help of their Advanced Robots. Hubert Lysias is the Chosen One to save the Earth. Who is Hubert Lysias? Find Out in the game and help Hubert Lysias to defeat the aliens and save the Earth.",
+			"title" : "Dead End",
+			"description" : "You are caught in a weird dream, a hallucination (Or is it just real??). A dream where you need to solve a maze to escape. You later find out it's not just one maze. Walk between the Walls of Red and on top of the Floor of Black to acquire the Sphere of Green Light in each maze in order to advance.",
 			"properties" : [
 				{
 					"label" : "Genre",
-					"value" : "FPS"
+					"value" : "Puzzle"
 				},
 				{
 					"label" : "Platform",
-					"value" : "Windows, macOS, Linux"
+					"value" : "Android"
 				},
 				{
 					"label" : "Made With",
-					"value" : "Unity 3D, Audacity"
+					"value" : "Unity 3D"
 				}
 			],
 			"orientation" : "landscape",
-			"folder" : "iscb",
-			"image_number" : 5,
-			"extension" : ".png",
-			"pc_game" : true
+			"folder" : "dead-end",
+			"image_number" : 4,
+			"extension" : ".png"
 		}
 	]
 };
