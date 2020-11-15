@@ -217,7 +217,7 @@ const data = {
 			"folder" : "airport-vr",
 			"extension" : ".png"
 		},
-		{
+		/*{
 			"title" : "Hatch3",
 			"description" : "A Tamagotchi style Match 3 game.",
 			"properties" : [
@@ -237,7 +237,7 @@ const data = {
 			"orientation" : "portrait",
 			"image_number" : 0,
 			"wip" : true
-		},
+		},*/
 		{
 			"title" : "The Infinite Spirit Of Carte Blanche",
 			"description" : "The advent of Aliens of innominate origin causes pandemonium on Earth. The Human Race is wiped out by the aliens with the help of their Advanced Robots. Hubert Lysias is the Chosen One to save the Earth. Who is Hubert Lysias? Find Out in the game and help Hubert Lysias to defeat the aliens and save the Earth.",
