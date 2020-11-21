@@ -4,6 +4,24 @@ function main(){
 	showSkills();
 	initThemeSelection();
 	processProjects();
+	modifyResumeLink();
+}
+
+function modifyResumeLink(){
+	let resumeLink = document.getElementById("resume-link");
+	let queryParams = (new URL(document.location)).searchParams;
+	let resumeParam = queryParams.get("r");
+	let resumeNum = "";
+	let allowedResumeNumbers = ["1"];
+	if(resumeParam === null || resumeParam === "49"){
+		resumeNum = "1";
+	}else{
+		resumeNum = String.fromCharCode(resumeParam);
+		if(allowedResumeNumbers.indexOf(resumeNum) === -1){
+			resumeNum = "";
+		}
+	}
+	resumeLink.href = `docs/Resume${resumeNum}.pdf`
 }
 
 function showSkills(){
