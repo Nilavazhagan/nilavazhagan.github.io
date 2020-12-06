@@ -11,9 +11,10 @@ function modifyResumeLink(){
 	let resumeLink = document.getElementById("resume-link");
 	let queryParams = (new URL(document.location)).searchParams;
 	let resumeParam = queryParams.get("r");
+	resumeParam = resumeParam ? resumeParam : "48";
 	let resumeNum = "";
 	let allowedResumeNumbers = ["1"];
-	if(resumeParam === null || resumeParam === "49"){
+	if(resumeParam === "49"){
 		resumeNum = "1";
 	}else{
 		resumeNum = String.fromCharCode(resumeParam);
