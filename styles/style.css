@@ -63,7 +63,7 @@
 html, body {
   height: 100%;
   margin: 0;
-  background: var(--bg-color);
+  background: var(--bg-color-flat);
   font-family: 'Signika', sans-serif;
   color: var(--font-color);
 }
@@ -801,7 +801,7 @@ span.project-tab-span, span.screenshot-tab-span {
     display: block;
     margin-top: 22px;
     transform: rotate(180deg);
-    margin-left: 16px;
+    /*margin-left: 16px;*/
 }
 
 .edu-title {
