@@ -140,6 +140,14 @@ function processProjects(){
 
 		project_desc.appendChild(project_description);
 		project_desc.appendChild(project_properties);
+		if(project.itchio_link){
+			let itchio_anchor = document.createElement("a");
+			itchio_anchor.className = "itch-link";
+			itchio_anchor.href = project.itchio_link;
+			itchio_anchor.target = "_blank";
+			itchio_anchor.innerHTML = "Download on <strong>itch.io</strong>";
+			project_desc.appendChild(itchio_anchor);
+		}
 
 		project_div.appendChild(project_scrnshots);
 		project_div.appendChild(project_title);
@@ -259,6 +267,7 @@ const data = {
 		{
 			"title" : "The Infinite Spirit Of Carte Blanche",
 			"description" : "The advent of Aliens of innominate origin causes pandemonium on Earth. The Human Race is wiped out by the aliens with the help of their Advanced Robots. Hubert Lysias is the Chosen One to save the Earth. Who is Hubert Lysias? Find Out in the game and help Hubert Lysias to defeat the aliens and save the Earth.",
+			"itchio_link" : "https://antreek-games.itch.io/the-infinite-spirit-of-carte-blanche",
 			"properties" : [
 				{
 					"label" : "Genre",
@@ -282,6 +291,7 @@ const data = {
 		{
 			"title" : "Pop It - Colors",
 			"description" : "Pop the Dots that appear on the screen to score points. Don't miss a dot. Includes 7 game modes and in-game help.",
+			"itchio_link" : "https://antreek-games.itch.io/pop-it-colors",
 			"properties" : [
 				{
 					"label" : "Genre",
@@ -304,6 +314,7 @@ const data = {
 		{
 			"title" : "Luck! Really?",
 			"description" : "Experience Chance based games that are not really based on chance. Can you determine the exact outcome of the CPU in every turn? It is possible! Play for High Scores in the Endless Fun!",
+			"itchio_link" : "https://antreek-games.itch.io/luck-really",
 			"properties" : [
 				{
 					"label" : "Genre",
@@ -326,6 +337,7 @@ const data = {
 		{
 			"title" : "Pop it",
 			"description" : "Pop the Dots that appear on the screen to score points. Don't miss a dot.",
+			"itchio_link" : "https://antreek-games.itch.io/pop-it",
 			"properties" : [
 				{
 					"label" : "Genre",
@@ -348,6 +360,7 @@ const data = {
 		{
 			"title" : "Dead End",
 			"description" : "You are caught in a weird dream, a hallucination (Or is it just real??). A dream where you need to solve a maze to escape. You later find out it's not just one maze. Walk between the Walls of Red and on top of the Floor of Black to acquire the Sphere of Green Light in each maze in order to advance.",
+			"itchio_link" : "https://antreek-games.itch.io/dead-end",
 			"properties" : [
 				{
 					"label" : "Genre",
