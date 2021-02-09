@@ -223,6 +223,28 @@ const data = {
 	],
 	"projects" : [
 		{
+			"title" : "Mira and the Rabbit",
+			"description" : "A short narrative-driven RPG game about a girl trapped in a story book.",
+			"properties" : [
+				{
+					"label" : "Genre",
+					"value" : "RPG"
+				},
+				{
+					"label" : "Platform",
+					"value" : "Windows"
+				},
+				{
+					"label" : "MadeWith",
+					"value" : "Unity 3D"
+				}
+			],
+			"orientation" : "landscape",
+			"image_number" : 5,
+			"folder" : "mira",
+			"extension" : ".png"
+		},
+		{
 			"title" : "Mobile VR Simulation with Navigation",
 			"description" : "Application that simulates an environment and enables users to explore & navigate to various points of interests.",
 			"properties" : [
