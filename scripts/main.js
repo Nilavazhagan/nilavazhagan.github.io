@@ -235,7 +235,7 @@ const data = {
 					"value" : "Windows"
 				},
 				{
-					"label" : "MadeWith",
+					"label" : "Made With",
 					"value" : "Unity 3D"
 				}
 			],
