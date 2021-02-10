@@ -225,6 +225,7 @@ const data = {
 		{
 			"title" : "Mira and the Rabbit",
 			"description" : "A short narrative-driven RPG game about a girl trapped in a story book.",
+                        "itchio_link" : "https://momei-doumei.itch.io/mira-and-the-rabbit", 
 			"properties" : [
 				{
 					"label" : "Genre",
