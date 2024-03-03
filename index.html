@@ -12,13 +12,14 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
     <link rel="manifest" href="favicons/site.webmanifest">
     <link rel="stylesheet" href="css/style.css" />
-
+    
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
-      rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+    rel="stylesheet"
     />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet"/>
   </head>
   <body>
     <header class="header">
@@ -91,9 +92,7 @@
         <h1 class="heading-primary">Hey, My name is Nilavazhagan Elangovan</h1>
         <div class="home-hero__info">
           <p class="text-primary">
-            A software developer passionate about building games. Seeking a
-            position to utilize my programming skills along with my creative drive
-            to create immersive games as a gameplay or tools programmer.
+            Experienced game programmer with a focus on AI-based games. Seeking console and PC gaming opportunities. Fast learner, effective communicator and passionate about creating immersive experiences.
           </p>
         </div>
         <div class="home-hero__cta">
@@ -146,15 +145,15 @@
             <h3 class="about__content-title">Get to know me!</h3>
             <div class="about__content-details">
               <p class="about__content-details-para">
-                Hey! It's
-                <strong>Nilavazhagan.</strong> I'm a <strong>Game Developer</strong> located in Chennai. I previously worked as a 
-                <strong>front-end developer</strong>, where I developed a framework from scratch and 
-                maintained it for the ease of use of module developers. I then transitioned to my
-                dream career as a <strong>game developer</strong>.
+                People call me
+                <strong>Nila</strong>! I'm a <strong>Game Developer</strong> from India. Ever since I was young, 
+                the world of video games has captivated me, 
+                motivating me to ignite that same passion in others.
+                Hence, I set my sights on realizing my dream of becoming a
+                <strong>game developer</strong>.
               </p>
               <p class="about__content-details-para">
-                Feel free to
-                <strong>contact</strong> me here.
+                Let's create something extraordinary together!
               </p>
             </div>
             <a href="./#contact" class="btn btn--med btn--theme dynamicBgClr"
@@ -164,18 +163,29 @@
           <div class="about__content-skills">
             <h3 class="about__content-title">My Skills</h3>
             <div class="skills">
-              <div class="skills__skill">C++</div>
-              <div class="skills__skill">C#</div>
-              <div class="skills__skill">Unity3D</div>
-              <div class="skills__skill">JavaScript</div>
-              <div class="skills__skill">Java</div>
-              <div class="skills__skill">HTML</div>
-              <div class="skills__skill">CSS</div>
-              <div class="skills__skill">Mercurial</div>
-              <div class="skills__skill">Git</div>
-              <div class="skills__skill">Blender</div>
-              <div class="skills__skill">Eclipse</div>
-              <div class="skills__skill">Visual Studio</div>
+              <div class="skills__section">
+                <div class="skills__skill">Unity3D</div>
+                <div class="skills__skill">UI Toolkit</div>
+                <div class="skills__skill">Addressables</div>
+                <div class="skills__skill">Unity Profiler</div>
+              </div>
+              <div class="skills__section">
+                <div class="skills__skill">C#</div>
+                <div class="skills__skill">C++</div>
+                <div class="skills__skill">JavaScript</div>
+                <div class="skills__skill">Java</div>
+                <div class="skills__skill">Python</div>
+                <div class="skills__skill">TypeScript</div>
+                <div class="skills__skill">HTML/CSS</div>
+                <div class="skills__skill">MySQL</div>
+              </div>
+              <div class="skills__section">
+                <div class="skills__skill">Git</div>
+                <div class="skills__skill">Docker</div>
+                <div class="skills__skill">REST APIs</div>
+                <div class="skills__skill">Blender</div>
+                <div class="skills__skill">AWS</div>
+              </div>
             </div>
           </div>
         </div>
@@ -200,18 +210,24 @@
             <div class="projects__row-content">
               <h3 class="projects__row-content-title">Mira and the Rabbit</h3>
               <p class="projects__row-content-desc">
-                A short narrative-driven RPG game about a girl trapped in a story book.
+                In this narrative RPG, Mira, trapped in a storybook, seeks her missing friend. 
+                Suddenly transported to an unknown realm, she must navigate to save her friend 
+                and escape eternal entrapment. Will she succeed or remain lost forever?
               </p>
-              <ul>
-                <li class="projects__row-content-desc">Genre	-	RPG</li>
-                <li class="projects__row-content-desc">Platform	-	Windows</li>
-                <li class="projects__row-content-desc">Made With	-	Unity 3D</li>
-              </ul>
+              <div class="about__content-skills">
+                <div class="skills">
+                  <div class="skills__section">
+                    <div class="skills__skill">Unity3D</div>
+                    <div class="skills__skill">C#</div>
+                    <div class="skills__skill">Git</div>
+                  </div>
+                </div>
+              </div>
               <a
                 href="https://momei-doumei.itch.io/mira-and-the-rabbit"
-                class="btn btn--med btn--theme dynamicBgClr"
+                class="btn btn--med btn--theme dynamicBgClr download-btn"
                 target="_blank"
-                >Download on <strong>itch.io</strong></a
+                >Download on <span class="lato-bold">itch.io</span></a
               >
             </div>
           </div>
@@ -227,13 +243,18 @@
             <div class="projects__row-content">
               <h3 class="projects__row-content-title">Mobile VR Simulation with Navigation</h3>
               <p class="projects__row-content-desc">
-                Application that simulates an environment and enables users to explore & navigate to various points of interests.
+                A VR app that immerses users in simulated environments, allowing exploration and navigation to different points of interest.
               </p>
-              <ul>
-                <li class="projects__row-content-desc">Genre	-	Simulation</li>
-                <li class="projects__row-content-desc">Platform	-	Android</li>
-                <li class="projects__row-content-desc">Made With	-	Unity 3D, Google Cardboard</li>
-              </ul>
+              <div class="about__content-skills">
+                <div class="skills">
+                  <div class="skills__section">
+                    <div class="skills__skill">Unity3D</div>
+                    <div class="skills__skill">C#</div>
+                    <div class="skills__skill">Google Cardboard</div>
+                    <div class="skills__skill">Unity NavMesh</div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div class="projects__row">
@@ -248,23 +269,32 @@
             <div class="projects__row-content">
               <h3 class="projects__row-content-title">The Infinite Spirit Of Carte Blanche</h3>
               <p class="projects__row-content-desc">
-                The advent of Aliens of innominate origin causes pandemonium on Earth. The Human Race is wiped out by the aliens with the help of their Advanced Robots. Hubert Lysias is the Chosen One to save the Earth. Who is Hubert Lysias? Find Out in the game and help Hubert Lysias to defeat the aliens and save the Earth.
+                In this first-person shooter game, players embody Hubert Lysias, a ghost engaged in combat against aliens who have devastated humanity with their advanced robots.
               </p>
-              <ul>
-                <li class="projects__row-content-desc">Genre	-	FPS</li>
-                <li class="projects__row-content-desc">Platform	-	Windows, macOS, Linux</li>
-                <li class="projects__row-content-desc">Made With	-	Unity 3D, Audacity</li>
-              </ul>
+              <div class="about__content-skills">
+                <div class="skills">
+                  <div class="skills__section">
+                    <div class="skills__skill">Unity3D</div>
+                    <div class="skills__skill">C#</div>
+                  </div>
+                </div>
+              </div>
               <a
                 href="https://antreek-games.itch.io/the-infinite-spirit-of-carte-blanche"
-                class="btn btn--med btn--theme dynamicBgClr"
+                class="btn btn--med btn--theme dynamicBgClr download-btn"
                 target="_blank"
-                >Download on <strong>itch.io</strong></a
+                >Download on <span class="lato-bold">itch.io</span></a
               >
             </div>
           </div>
           <div class="projects__row">
-            <div class="projects__row-img-cont">
+            <div class="projects__row-img-cont portrait-img-cont">
+              <img
+                src="./assets/jpeg/popit-menu.jpg"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
               <img
                 src="./assets/jpeg/Pop.jpg"
                 alt="Software Screenshot"
@@ -275,18 +305,22 @@
             <div class="projects__row-content">
               <h3 class="projects__row-content-title">Pop It - Colors</h3>
               <p class="projects__row-content-desc">
-                Pop the Dots that appear on the screen to score points. Don't miss a dot. Includes 7 game modes and in-game help.
+                A remastered version of Pop It! Test your skills as you pop dots appearing on the screen to earn points. With seven game modes don't let a single dot escape.
               </p>
-              <ul>
-                <li class="projects__row-content-desc">Genre	-	Casual</li>
-                <li class="projects__row-content-desc">Platform	-	Android</li>
-                <li class="projects__row-content-desc">Made With	-	Unity 3D, GIMP, Audacity</li>
-              </ul>
+              <div class="about__content-skills">
+                <div class="skills">
+                  <div class="skills__section">
+                    <div class="skills__skill">Unity3D</div>
+                    <div class="skills__skill">C#</div>
+                    <div class="skills__skill">Android SDK</div>
+                  </div>
+                </div>
+              </div>
               <a
                 href="https://antreek-games.itch.io/pop-it-colors"
-                class="btn btn--med btn--theme dynamicBgClr"
+                class="btn btn--med btn--theme dynamicBgClr download-btn"
                 target="_blank"
-                >Download on <strong>itch.io</strong></a
+                >Download on <span class="lato-bold">itch.io</span></a
               >
             </div>
           </div>
@@ -302,23 +336,33 @@
             <div class="projects__row-content">
               <h3 class="projects__row-content-title">Luck! Really?</h3>
               <p class="projects__row-content-desc">
-                Experience Chance based games that are not really based on chance. Can you determine the exact outcome of the CPU in every turn? It is possible! Play for High Scores in the Endless Fun!
+                Experience chance based games that are not really based on chance. Can you determine the exact outcome in every turn? It is possible! Play for high scores in the endless fun!
               </p>
-              <ul>
-                <li class="projects__row-content-desc">Genre	-	Casual</li>
-                <li class="projects__row-content-desc">Platform	-	Android</li>
-                <li class="projects__row-content-desc">Made With	-	Unity 3D, Audacity</li>
-              </ul>
+              <div class="about__content-skills">
+                <div class="skills">
+                  <div class="skills__section">
+                    <div class="skills__skill">Unity3D</div>
+                    <div class="skills__skill">C#</div>
+                    <div class="skills__skill">Android SDK</div>
+                  </div>
+                </div>
+              </div>
               <a
                 href="https://antreek-games.itch.io/luck-really"
-                class="btn btn--med btn--theme dynamicBgClr"
+                class="btn btn--med btn--theme dynamicBgClr download-btn"
                 target="_blank"
                 >Download on <strong>itch.io</strong></a
               >
             </div>
           </div>
           <div class="projects__row">
-            <div class="projects__row-img-cont">
+            <div class="projects__row-img-cont portrait-img-cont">
+              <img
+                src="./assets/jpeg/popit1-menu.png"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
               <img
                 src="./assets/jpeg/Pop.png"
                 alt="Software Screenshot"
@@ -329,16 +373,20 @@
             <div class="projects__row-content">
               <h3 class="projects__row-content-title">Pop it</h3>
               <p class="projects__row-content-desc">
-                Pop the Dots that appear on the screen to score points. Don't miss a dot.
+                Test your skills as you pop dots appearing on the screen to earn points. With three game modes don't let a single dot escape.
               </p>
-              <ul>
-                <li class="projects__row-content-desc">Genre	-	Casual</li>
-                <li class="projects__row-content-desc">Platform	-	Android</li>
-                <li class="projects__row-content-desc">Made With	-	Unity 3D, Blender, Audacity</li>
-              </ul>
+              <div class="about__content-skills">
+                <div class="skills">
+                  <div class="skills__section">
+                    <div class="skills__skill">Unity3D</div>
+                    <div class="skills__skill">C#</div>
+                    <div class="skills__skill">Android SDK</div>
+                  </div>
+                </div>
+              </div>
               <a
                 href="https://antreek-games.itch.io/pop-it"
-                class="btn btn--med btn--theme dynamicBgClr"
+                class="btn btn--med btn--theme dynamicBgClr download-btn"
                 target="_blank"
                 >Download on <strong>itch.io</strong></a
               >
@@ -356,16 +404,21 @@
             <div class="projects__row-content">
               <h3 class="projects__row-content-title">Dead End</h3>
               <p class="projects__row-content-desc">
-                You are caught in a weird dream, a hallucination (Or is it just real??). A dream where you need to solve a maze to escape. You later find out it's not just one maze. Walk between the Walls of Red and on top of the Floor of Black to acquire the Sphere of Green Light in each maze in order to advance.
+                In this mobile game, embark on a surreal journey through challenging mazes. Use your mobile's gyroscope to traverse red walls and black floors, collecting green light spheres to progress.
               </p>
-              <ul>
-                <li class="projects__row-content-desc">Genre	-	Puzzle</li>
-                <li class="projects__row-content-desc">Platform	-	Android</li>
-                <li class="projects__row-content-desc">Made With	-	Unity 3D</li>
-              </ul>
+              <div class="about__content-skills">
+                <div class="skills">
+                  <div class="skills__section">
+                    <div class="skills__skill">Unity3D</div>
+                    <div class="skills__skill">C#</div>
+                    <div class="skills__skill">Android SDK</div>
+                    <div class="skills__skill">Gyroscope API</div>
+                  </div>
+                </div>
+              </div>
               <a
-                href="https://antreek-games.itch.io/pop-it"
-                class="btn btn--med btn--theme dynamicBgClr"
+                href="https://antreek-games.itch.io/dead-end"
+                class="btn btn--med btn--theme dynamicBgClr download-btn"
                 target="_blank"
                 >Download on <strong>itch.io</strong></a
               >
