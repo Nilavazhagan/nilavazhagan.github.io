@@ -757,6 +757,12 @@ textarea {
   margin-left: 10px;
 }
 
+.source-icon > a { 
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 .hidden-icon {
   visibility: hidden;
   pointer-events: none;
