@@ -305,6 +305,9 @@ textarea {
       .projects__row-content {
         align-items: center; } }
     .projects__row-content-title {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 30px 30px;
       font-weight: 700;
       font-size: 2.8rem;
       margin-bottom: 2rem; }
@@ -720,6 +723,43 @@ textarea {
 
 .portrait-img-cont > img {
   padding: 10px;
+}
+
+.platform-icon {
+  height: 20px;
+  background-size: cover;
+  opacity: 60%;
+  margin-left: 10px;
+}
+
+.pc-icon {
+  background-image: url("/assets/png/icons8-pc-48.png");
+}
+
+.vr-icon {
+  background-image: url("/assets/png/icons8-virtual-reality-48.png");
+}
+
+.android-portrait-icon {
+  background-image: url("/assets/png/icons8-google-pixel-6-48.png");
+}
+
+.android-landscape-icon {
+  background-image: url("/assets/png/icons8-google-pixel-6-48.png");
+  rotate: -90deg;
+}
+
+.source-icon {
+  background-image: url("/assets/png/icons8-code-48.png");
+  height: 20px;
+  background-size: cover;
+  opacity: 60%;
+  margin-left: 10px;
+}
+
+.hidden-icon {
+  visibility: hidden;
+  pointer-events: none;
 }
 
 @keyframes wheel {
