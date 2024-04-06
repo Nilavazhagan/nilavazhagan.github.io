@@ -132,7 +132,7 @@ textarea {
   background: #fff !important;
 }
 
-.heading-sec__main::after {
+.heading-sec__main:not(.collapsible)::after {
   content: '';
   position: absolute;
   top: calc(100% + 1.5rem);
@@ -1163,4 +1163,48 @@ textarea {
 .carousel.disabled
 {
   pointer-events: none;
+}
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  border-color: #345b2a;
+  position: absolute;
+  top: calc(100% + 1.5rem);
+  left: 50%;
+  transition: transform 0.5s;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.hidden {
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+.shown {
+  opacity: 1;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+.heading.heading-sec.heading-sec__mb-bg.more {
+  cursor: pointer;
 }
