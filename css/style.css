@@ -123,6 +123,10 @@ textarea {
   position: relative;
 }
 
+.heading-sec__main.collapsible {
+  font-size: 2rem;
+}
+
 .heading-sec__main--lt {
   color: #fff;
 }
