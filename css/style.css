@@ -479,7 +479,30 @@ textarea {
   color: grey;
   max-width: 60rem;
   line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.projects__row-content-subdesc {
+  font-size: 1.4rem;
+  color: grey;
+  max-width: 60rem;
+  line-height: 1.7;
   margin-bottom: 3rem;
+  font-weight: 600;
+}
+
+.projects__row-content-subdesc > ul
+{
+  padding-left: 3rem;
+}
+
+.projects__row-content-subdesc > ul > li
+{
+  list-style: initial;
+}
+
+.subdesc__header {
+    font-weight: 700;
 }
 
 @media only screen and (max-width: 37.5em) {
