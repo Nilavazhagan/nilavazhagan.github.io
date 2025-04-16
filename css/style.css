@@ -213,6 +213,11 @@ textarea {
   font-size: 1.6rem;
 }
 
+.btn--small {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+}
+
 .btn--theme {
   background: #345b2a;
   color: #fff;
@@ -224,6 +229,11 @@ textarea {
   border: 2px solid #345b2a;
   box-shadow: none;
   padding: calc(1.5rem - 2px) calc(5rem - 2px);
+}
+
+.btn--small.btn--theme-inv
+{
+  padding: calc(1rem - 2px) calc(2rem - 2px);
 }
 
 .sec-pad {
@@ -1072,6 +1082,16 @@ textarea {
 .android-landscape-icon {
   background-image: url("/assets/png/icons8-google-pixel-6-48.png");
   rotate: -90deg;
+}
+
+.source-link
+{
+  display: inline;
+  font-size: 20px;
+  font-variant: all-small-caps;
+  text-decoration: underline;
+  color: #345b2a;
+  margin-left: 20px;
 }
 
 .source-icon {
